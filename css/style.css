@@ -1,0 +1,212 @@
+/* TIPOGRAFIA IMPORTADA */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+
+/* COMÚN EN TODAS LAS PÁGINAS */
+
+*{
+    box-sizing: border-box;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+.bodyPaginas {
+    background-image: url(../images/fondo2.jpg);
+}
+
+.margenes{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -2%;
+    background-color: wheat;
+    border: 60% solid black;
+}
+
+.navegadorPaginas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60%;
+    background-color: wheat;
+    font-size: x-large;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* MEDIA QUERYS NAVEGADORES */
+
+@media only screen and (max-width: 768px){
+    .navegadorPaginas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    background-color: wheat;
+    border: solid 1px black;
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    }
+}
+
+h1{
+    display: flex;
+    font-size: 500%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: wheat;
+}
+
+/* MEDIA QUERYS TITULOS */
+
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 300%;
+    }
+}
+
+.h2Paginas{
+    font-size: 250%;
+    text-align: center;
+}
+
+.margenes h3{
+    font-size: x-large;
+}
+
+.margenes h4{
+    text-align: center;
+}
+
+.margenes p{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* INDEX */
+
+    #estiloIndex {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat( 10% 25% 25% 25% 15%);
+        grid-column-gap: 1%;
+        grid-row-gap: 1%;
+        border: solid 1px black;
+        background-image: url(../images/fondo2.jpg);
+        }
+        
+        .logotipoIndex {
+            display: grid;
+            justify-items: stretch;
+            justify-content: space-evenly;
+            align-items: center;
+            grid-area: 1 / 1 / 2 / 2;
+            background-color: wheat;
+            border: solid 1px black;}
+            .logotipoIndex h1{
+                font-size: 200%;
+                animation-duration: 2s;
+                animation-name: aparecer;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes aparecer{
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+
+        .navegadorIndex {
+            display: flex;
+            justify-content: space-evenly;
+            justify-items: center;
+            align-items: center;
+            grid-area: 1 / 2 / 2 / 6; 
+            background-color: wheat;
+            border: solid 1px black;
+            font-size: x-large;
+            align-items: center;
+            font-family: 'Roboto Condensed', sans-serif;}
+        .menuIndex {
+            grid-area: 2 / 1 / 5 / 2;
+            background-color: wheat;
+            border: solid 1px black;}
+            .menuIndex ul{
+                list-style: none;
+            }
+        .contenidoPrincipalIndex {
+            display: flex;
+            flex-direction: column;
+            justify-items: flex-start;
+            grid-area: 2 / 2 / 5 / 6;
+            background-color: wheat;
+            border: solid 1px black;}
+        .mediosDePagoIndex {
+        
+            grid-area: 5 / 1 / 6 / 3;
+            background-color: wheat;
+            border: solid 1px black;}
+            .redesSocialesIndex {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
+                grid-area: 5 / 3 / 6 / 6;
+                background-color: wheat;
+                border: solid 1px black;}
+                .redesSocialesIndex a {
+                    margin-right: 5px;
+                    margin-left: 5px;
+                    text-decoration: none;
+                    color: black;
+                    font-weight: lighter;
+                }
+
+/* MEDIA QUERYS INDEX*/
+
+    @media only screen and (max-width: 768px){
+        #estiloIndex{
+        display: flex;
+        flex-direction: column;
+        }
+
+        .navegadorIndex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    background-color: wheat;
+    border: solid 1px black;
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+        }
+
+        .redesSocialesIndex{
+            justify-content: flex-start;
+        }
+    }
+
+/* MENÚ */
+
+/* MI CUENTA */
+
+/* RECIENTEMENTE LANZADOS */
+
+/* ¿QUIÉNES SOMOS */
+
+/* CONTÁCTENOS */
