@@ -155,10 +155,16 @@ h1{
             background-color: wheat;
             border: solid 1px black;}
         .mediosDePagoIndex {
-        
             grid-area: 5 / 1 / 6 / 3;
             background-color: wheat;
             border: solid 1px black;}
+            .mediosDePagoIndex a {
+                margin-right: 5px;
+                margin-left: 5px;
+                text-decoration: none;
+                color: black;
+                font-weight: lighter;
+            }
             .redesSocialesIndex {
                 display: flex;
                 flex-direction: row;
