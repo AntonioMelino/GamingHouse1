@@ -1,6 +1,6 @@
 # GAMINGHOUSE
 
-Primer proyecto de desarrollo web con HTML y CSS
+Primer proyecto de desarrollo web con HTML y CSS.
 
 ## LINK
 
