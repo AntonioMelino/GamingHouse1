@@ -1,4 +1,4 @@
-# GAMINGHOUSE
+# GAMING HOUSE
 
 Primer proyecto de desarrollo web con HTML y CSS.
 
